@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoAI Hub - Advanced Cryptocurrency Trading with AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>CryptoAI Hub</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#dashboard" class="nav__link">Dashboard</a></li>
+                <li><a href="#ai-tools" class="nav__link">AI Tools</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#market" class="nav__link">Market</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle btn btn--secondary" id="themeToggle">🌙</button>
+                <div class="user-profile">
+                    <span class="user-avatar">👤</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Advanced Cryptocurrency Trading with AI</h1>
+                <p class="hero__subtitle">
+                    Harness the power of artificial intelligence to make smarter crypto investments. 
+                    Our advanced AI algorithms analyze market trends, predict price movements, and optimize your portfolio automatically.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--lg">Start Trading Now</button>
+                    <button class="btn btn--outline btn--lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Ticker -->
+    <section class="market-ticker">
+        <div class="ticker-wrapper">
+            <div class="ticker-content" id="tickerContent">
+                <span class="ticker-item">BTC: $108,500 (+2.5%)</span>
+                <span class="ticker-item">ETH: $4,850 (+1.8%)</span>
+                <span class="ticker-item">XRP: $3.14 (+5.2%)</span>
+                <span class="ticker-item">BNB: $805 (+1.2%)</span>
+                <span class="ticker-item">SOL: $235 (+3.4%)</span>
+                <span class="ticker-item">ADA: $0.78 (+2.1%)</span>
+                <span class="ticker-item">DOGE: $0.22 (+4.5%)</span>
+                <span class="ticker-item">DOT: $8.45 (+1.7%)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cryptocurrency Dashboard -->
+    <section class="crypto-dashboard" id="dashboard">
+        <div class="container">
+            <h2 class="section-title">Live Cryptocurrency Market</h2>
+            <p class="section-subtitle">Click any cryptocurrency to change the website theme</p>
+            
+            <div class="crypto-grid" id="cryptoGrid">
+                <!-- Crypto cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Section -->
+    <section class="ai-features" id="ai-tools">
+        <div class="container">
+            <h2 class="section-title">AI-Powered Trading Tools</h2>
+            <p class="section-subtitle">Leverage cutting-edge artificial intelligence for smarter crypto investments</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h3 class="feature-title">AI Market Predictor</h3>
+                    <p class="feature-description">Advanced machine learning algorithms analyze market trends and predict price movements with 85% accuracy</p>
+                    <div class="feature-tag">Real-time market analysis</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Smart Portfolio Manager</h3>
+                    <p class="feature-description">AI-powered portfolio optimization and automatic rebalancing based on your risk tolerance</p>
+                    <div class="feature-tag">Automated portfolio management</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Risk Assessment AI</h3>
+                    <p class="feature-description">Intelligent risk analysis for trades and investments with personalized recommendations</p>
+                    <div class="feature-tag">Real-time risk scoring</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">Trading Bot Assistant</h3>
+                    <p class="feature-description">Automated trading execution based on customizable AI strategies and market conditions</p>
+                    <div class="feature-tag">24/7 automated trading</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚨</div>
+                    <h3 class="feature-title">Fraud Detection System</h3>
+                    <p class="feature-description">Advanced AI monitors transactions for suspicious activity and security threats</p>
+                    <div class="feature-tag">Real-time security monitoring</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">AI Chat Support</h3>
+                    <p class="feature-description">Intelligent chatbot provides instant answers about crypto markets and platform features</p>
+                    <div class="feature-tag">24/7 AI customer support</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">News Sentiment Analyzer</h3>
+                    <p class="feature-description">AI analyzes crypto news and social media to gauge market sentiment and impact on prices</p>
+                    <div class="feature-tag">Real-time sentiment analysis</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3 class="feature-title">Smart Alerts System</h3>
+                    <p class="feature-description">Personalized AI notifications for price movements, market opportunities, and risks</p>
+                    <div class="feature-tag">Intelligent personalized alerts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Tracker -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Your Portfolio</h2>
+            
+            <div class="portfolio-overview">
+                <div class="portfolio-card">
+                    <h3>Total Portfolio Value</h3>
+                    <div class="portfolio-value">$87,250.00</div>
+                    <div class="portfolio-change">+$2,850 (+3.38%) today</div>
+                </div>
+                
+                <div class="portfolio-stats">
+                    <div class="stat-item">
+                        <div class="stat-label">24h Change</div>
+                        <div class="stat-value positive">+3.38%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Total Assets</div>
+                        <div class="stat-value">8</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Best Performer</div>
+                        <div class="stat-value">XRP (+5.2%)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="asset-breakdown">
+                <h3>Asset Breakdown</h3>
+                <div class="asset-list">
+                    <div class="asset-item">
+                        <div class="asset-info">
+                            <span class="asset-name">Bitcoin (BTC)</span>
+                            <span class="asset-amount">0.45 BTC</span>
+                        </div>
+                        <div class="asset-value">$48,825</div>
+                    </div>
+                    <div class="asset-item">
+                        <div class="asset-info">
+                            <span class="asset-name">Ethereum (ETH)</span>
+                            <span class="asset-amount">5.2 ETH</span>
+                        </div>
+                        <div class="asset-value">$25,220</div>
+                    </div>
+                    <div class="asset-item">
+                        <div class="asset-info">
+                            <span class="asset-name">Solana (SOL)</span>
+                            <span class="asset-amount">42 SOL</span>
+                        </div>
+                        <div class="asset-value">$9,870</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Data -->
+    <section class="market-data" id="market">
+        <div class="container">
+            <h2 class="section-title">Market Statistics</h2>
+            
+            <div class="market-stats">
+                <div class="market-card">
+                    <h4>Global Market Cap</h4>
+                    <div class="market-value">$3.2T</div>
+                    <div class="market-change">+2.1% (24h)</div>
+                </div>
+                <div class="market-card">
+                    <h4>24h Volume</h4>
+                    <div class="market-value">$125.8B</div>
+                    <div class="market-change">+15.3% (24h)</div>
+                </div>
+                <div class="market-card">
+                    <h4>Bitcoin Dominance</h4>
+                    <div class="market-value">58.2%</div>
+                    <div class="market-change">-0.5% (24h)</div>
+                </div>
+                <div class="market-card">
+                    <h4>Active Cryptocurrencies</h4>
+                    <div class="market-value">25,847</div>
+                    <div class="market-change">+125 (24h)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CryptoAI Hub</h3>
+                    <p>The future of cryptocurrency trading powered by artificial intelligence.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📱 Twitter</a>
+                        <a href="#" target="_blank">📘 Facebook</a>
+                        <a href="#" target="_blank">💼 LinkedIn</a>
+                        <a href="#" target="_blank">📸 Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">AI Trading Bots</a></li>
+                        <li><a href="#">Portfolio Manager</a></li>
+                        <li><a href="#">Market Analytics</a></li>
+                        <li><a href="#">Risk Assessment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CryptoAI Hub. All rights reserved. | Powered by Advanced AI Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
